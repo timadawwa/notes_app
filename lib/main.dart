@@ -11,8 +11,11 @@ class NotesApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-     theme: ThemeData(brightness: Brightness.dark), //ThemeData.dark() ,//Dark MOde
-      home: const NotesView(), // const makes a difference in application performance
+      theme: ThemeData(
+          brightness: Brightness.dark,
+          fontFamily: 'Poppins'), //ThemeData.dark() ,//Dark MOde
+      home:
+          const NotesView(), // const makes a difference in application performance
     );
   }
 }
